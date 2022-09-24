@@ -45,7 +45,8 @@ struct HomeView: View {
                         .cornerRadius(15)
                     HStack{
                         GeometryReader { geo in
-                            TextField("Enter your task here", text: $task)
+                            Text("I would like to take this opportinity to thank you for providing me with this golden opportunity")
+                                .font(.system(size: 10, weight: .semibold))
                                 .allowsTightening(true)
                                 .lineLimit(10)
                                 .padding()
