@@ -35,6 +35,7 @@
 		0462771B28DF5BFB009F87F6 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		0462771D28DF6557009F87F6 /* TaskIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIndicator.swift; sourceTree = "<group>"; };
 		0462772028DF691A009F87F6 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		0462772228E0FA35009F87F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		046276FE28DF28F7009F87F6 /* DecagonTest */ = {
 			isa = PBXGroup;
 			children = (
+				0462772228E0FA35009F87F6 /* Info.plist */,
 				0462771F28DF6907009F87F6 /* Utils */,
 				0462771228DF30A0009F87F6 /* View */,
 				0462771128DF3098009F87F6 /* Model */,
@@ -334,6 +336,7 @@
 				DEVELOPMENT_TEAM = B93SR3X9XK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DecagonTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +366,7 @@
 				DEVELOPMENT_TEAM = B93SR3X9XK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DecagonTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

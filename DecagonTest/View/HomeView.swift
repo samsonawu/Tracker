@@ -16,16 +16,11 @@ struct HomeView: View {
     
     var body: some View {
         ZStack{
-            Rectangle()
-                .foregroundColor(.white)
-                .edgesIgnoringSafeArea(.top)
-              
             VStack{
-                //
-                
                 //Title
                 HStack{
                     Text("Title")
+                        .foregroundColor(.primary)
                     Spacer()
                     Image(systemName: "calendar")
                         .resizable()
@@ -38,7 +33,7 @@ struct HomeView: View {
                 }
                 .padding(.top, -5)
                 //Text
-                
+
                 ZStack{
                     Rectangle()
                         .frame(height: 100)
@@ -50,7 +45,7 @@ struct HomeView: View {
                                 .allowsTightening(true)
                                 .lineLimit(10)
                                 .padding()
-                                
+
                         }
                     }
                     .background(.green)
@@ -58,14 +53,14 @@ struct HomeView: View {
                     .cornerRadius(15)
                     .frame(height: 100)
                 }
-                
+
                 //Icons
                 HStack{
                     Icons(name: "photo")
                     Icons(name: "bell")
                     Icons(name: "paintpalette")
                     Icons(name: "menubar.arrow.down.rectangle")
-                    
+
                     Spacer()
                     Icons(name: "arrow.counterclockwise")
                     Icons(name: "arrow.clockwise")
@@ -79,22 +74,26 @@ struct HomeView: View {
                 .padding(.all, 10)
                 .background(.green)
                 .cornerRadius(15)
-                
+
                 HStack{
                     Icons(name: "clock")
-                    
+                        .foregroundColor(.primary)
+
                     Text("July 23, 2022")
                         .font(.system(size: 12, weight: .semibold))
-                    
+                        .foregroundColor(.primary)
+
                     Text("12:00 AM")
                         .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.primary)
                     Spacer()
                     Toggle("", isOn: $isAllDay)
                     Text("All day")
                         .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.primary)
                 }
                 .padding(.bottom, 5)
-                
+
                 HStack{
                     Text("Does not repeat")
                         .font(.system(size: 12, weight: .semibold))
@@ -103,7 +102,7 @@ struct HomeView: View {
                 }
                 HStack{
                     Icons(name: "clock")
-                    
+
                     DatePicker("", selection: $startDate, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                     Text("-")
@@ -118,14 +117,14 @@ struct HomeView: View {
                         .cornerRadius(10)
                 }
                 .padding(.bottom, 5)
-                
+
                 HStack{
                     Text("Task Created")
                     Spacer()
                     Icons(name: "arrow.up.arrow.down")
                 }
                 .padding()
-              
+
                 ScrollView{
                     VStack{
                 //Tasks list
@@ -135,8 +134,8 @@ struct HomeView: View {
                         TaskItem(item: Text("Decagon test").font(.system(size: 12, weight: .semibold)), backgroundColor: .cyan)
                     }
                 }
-                
-               
+
+
                         HStack{
                             Spacer()
                             VStack{
@@ -144,15 +143,15 @@ struct HomeView: View {
                                 Text("Task 1")
                                     .font(.system(size: 10, weight: .semibold))
                             }
-                          
+
                            Spacer()
-                            
+
                             VStack{
                                 TaskIndicator(height: 40, color: .purple)
                                 Text("Task 2")
                                     .font(.system(size: 10, weight: .semibold))
                             }
-                            
+
                             Spacer()
                             VStack{
                                 TaskIndicator(height: 20, color: .green)
@@ -186,13 +185,13 @@ struct HomeView: View {
 
                         }
                 Spacer()
-                
+
             }
             .padding()
             .navigationBarTitle("Task Tracker", displayMode: .inline)
             .navigationBarItems(trailing:
                                            Button(action: {
-                  
+
 
                    }) {
                        Image("person")
@@ -202,8 +201,7 @@ struct HomeView: View {
 
 
                    })
-        }
-       
+        }       
         
     }
 }
